@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      /* attr */
+        /* div::before {
+            content: "Элемент с классом " attr(class);
+          }
+          
+          div::after {
+            content: "Подсказка: " attr(title);
+          } */
+
+          /* calc */
+          .selector {
+            width: calc(100% / 3);
+          }
+
+          .selector {
+            width: calc(100% - 2rem);
+          }
+
+          .selector {
+            margin: calc(5vh / 4) 20px;
+            transition: transform calc(0.5s + 120ms);
+          }
+/* из относительной вычесть абсолютную величину */
+          .selector {
+            height: calc(100vh - 34px);
+          }
+          /* min */
+          .selector {
+            width: min(50%, 500px);
+          }
+
+          /* Свойство animation имеет следующие подсвойства:
+
+animation-name
+Определяет имя @keyframes , настраивающего кадры анимации.
+
+animation-duration
+Определяет время, в течение которого должен пройти один цикл анимации.
+
+animation-timing-function
+Настраивает ускорение анимации.
+
+animation-delay
+Настраивает задержку между временем загрузки элемента и временем начала анимации.
+
+animation-iteration-count
+Определяет количество повторений анимации; вы можете использовать значение infinite для бесконечного повторения анимации.
+
+animation-direction
+Даёт возможность при каждом повторе анимации идти по альтернативному пути, либо сбросить все значения и повторить анимацию.
+
+animation-fill-mode
+Настраивает значения, используемые анимацией, до и после исполнения.
+
+animation-play-state
+Позволяет приостановить и возобновить анимацию. */
+
+p {
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    /* animation: 3s infinite alternate slidein; */
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+  
+  .box{
+    width: 170px;
+    height: 170px;
+    background-color: blueviolet;
+    border-radius: 100%;
+    border: 5px solid blue;
+    animation-name: change-color;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes change-color{
+    from { 
+      background-color: blueviolet;
+      color: black;
+      margin: 15px, 150px;
+  }
+
+  70%{ 
+    background-color: aqua;
+    box-shadow: rgba(0, 0, 0, 0.6);
+    color:brown;
+    border: 20px solid rgb(223, 14, 77);
+    transform: scale(1.5, 0.5);
+    margin: 350px;
+}
+
+to{
+  background-color: rgb(144, 212, 16);
+    box-shadow: rgba(0, 0, 0, 0.6);
+    color:brown;
+    border: 20px solid rgb(4, 116, 54);
+    transform: scale(1, 1);
+    margin-left: 550px;
+}         
+
+    </style>
+</head>
+
+<body>
+  <div class="element" title="На самом деле внутри нет никакого текста"></div>
+  
+  <p>The Caterpillar and Alice looked at each other for some time in silence:
+    at last the Caterpillar took the hookah out of its mouth, and addressed
+    her in a languid, sleepy voice.</p>
+    
+    <div class="box"></div>
+
+</body>
+</html>
+
+<!-- eCSStractor -->

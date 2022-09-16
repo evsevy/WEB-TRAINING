@@ -1,0 +1,27 @@
+.sprite-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.sprite-image {
+    height: 123px;
+    width: 70px;
+    background: url(smur-sprite.png) 0px 0px;
+    animation: play 0.8s steps(16) infinite,
+        step 10s linear infinite;
+    position: absolute;
+    left: 0;
+}
+
+@keyframes play {
+    100% {
+        background-position: -1135px;
+    }
+}
+
+@keyframes step {
+    100% {
+        left: 100%;
+    }
+}
