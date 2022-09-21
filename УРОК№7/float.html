@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOAT</title>
+</head>
+<style>
+    body{ 
+        box-sizing: border-box;
+    }
+    .box{
+
+        margin-top: 80px;
+        background-color: yellow;
+        border: 3px solid blue;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100px;
+        height: auto;
+
+        float: right;
+    }
+    .box2{
+        margin-top: 80px;
+        background-color: rgb(80, 23, 146);
+        border: 3px solid yellow;
+        padding-left: 10px;
+        padding-right: 10px;       
+       
+        width: 100px;
+        height: auto;
+
+        float: left;
+    }
+    article{
+        
+background-color: brown;
+border: 3px solid rgb(22, 22, 21);
+    }
+    
+</style>
+<body>
+    <div class="box">
+        <p> 
+            As mentioned above, when an element is floated, it is taken out of the normal flow of the document (though still remaining part of it). It is shifted to the left, or right, until it touches the edge of its containing box, or another floated element.
+
+In this example, there are three colored squares. 
+Two are floated left, and one is floated right.
+ Note that the second "left" square is placed to the right of the first. 
+ Additional squares would continue to stack to the right, 
+ until they filled the containing box,
+ after which they would wrap to the next line.
+        </p>
+    </div>
+    <div class="box2">
+
+        As mentioned above, when an element is floated, 
+        it is taken out of the normal flow of the document (though still remaining part of it). It is shifted to the left, or right, 
+        until it touches the edge of its containing box, or another floated element.
+
+In this example, there are three colored squares. 
+Two are floated left, and one is floated right.
+ Note that the second "left" square is placed to the right of the first. 
+ Additional squares would continue to stack to the right, 
+ until they filled the containing box,
+ after which they would wrap to the next line.
+    </div>
+    <article>
+        <p>
+            As mentioned above, when an element is floated, 
+            it is taken out of the normal flow of the document (though still remaining part of it). It is shifted to the left, or right, 
+            until it touches the edge of its containing box, or another floated element.
+    
+    In this example, there are three colored squares. 
+    Two are floated left, and one is floated right.
+     Note that the second "left" square is placed to the right of the first. 
+     Additional squares would continue to stack to the right, 
+     until they filled the containing box,
+     after which they would wrap to the next line.
+        </p>
+    </article>
+</body>
+</html>
