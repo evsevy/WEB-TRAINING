@@ -1,0 +1,33 @@
+
+/* вложенность */
+.nav{
+    float: none;
+}
+.ul{
+float: right;
+}
+.li{
+
+} 
+
+/* амперсанд  "&" */
+
+/* & - заменяет наименование класса или тега во избежание повторения */
+
+body{
+    background: none;
+}
+
+&:hover{
+    background-color: #fff;
+}
+
+/* указатель (ссылка) "$" */
+
+$top-font: "Arial", sans-serif;
+
+%body{
+    text-decoration: $top-font;
+}
+
+@extend %body;
