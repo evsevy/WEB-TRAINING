@@ -140,3 +140,4 @@ console.log(myPortfolio.name);
 
 let name = 'EVGENY'
 alert(`hello ${name}`);
+ 
