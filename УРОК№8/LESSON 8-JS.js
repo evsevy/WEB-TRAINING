@@ -3,6 +3,9 @@
 let myName = 'Evgeny' / именованная
 let a = 1 / условная
 // КОНСТАНТНЫЕ (ОДНОТИПНЫЕ)и МНОГОЗНАЧНЫЕ (МНОГОТИПНЫЕ)
+Способы наименования переменных:
+camelCase, PascalCase, UPPER_CASE
+const MY_NAME // заранее известная
 const b;
 b = 'name';
 let d; 
