@@ -3,6 +3,11 @@
 let myName = 'Evgeny' / именованная
 let a = 1 / условная
 // КОНСТАНТНЫЕ (ОДНОТИПНЫЕ)и МНОГОЗНАЧНЫЕ (МНОГОТИПНЫЕ)
+const b;
+b = 'name';
+let d; 
+d = 'name';
+d = 0;
 // 6 основных типов: number, string ,boolean , null, symbol, undefined
 
 /* Число
