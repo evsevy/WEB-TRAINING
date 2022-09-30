@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <p>Нажмите кнопку, чтобы пять раз прокрутить блок кода.</p>
+
+    <button onclick="myFunction()">Попробовать</button>
+
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var text = "";
+            var i;
+            for (i = 0; i < 5; i++) {
+                text += "Это число таково " + i + "<br>";
+            }
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script>
+
+</body>
+
+</html>
